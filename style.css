@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Aside column */
+aside {
+  width: 30%;
+  background-color: #f8f9fa;
+  padding: 8px;
+  float: left;
+}
+
+/* Label */
+aside label {
+  font-size: 18px;
+}
+
+/* Input area */
+#city-name {
+  width: 70%;
+  margin-top: 4px;
+  padding: 8px;
+}
+
+/* Search button */
+#search-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: solid 2px #92c7ff;
+  border-radius: 4px;
+}
+
+#search-button:focus {
+  outline: none;
+}
+
+/* Search history list */
+#search-history {
+  list-style: none;
+  width: 90%;
+  border: 1px #eeeeee solid;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+/* list item */
+.search-item {
+  border: 1px #eeeeee solid;
+  padding: 12px;
+  cursor: default;
+}
+
+/* Main column */
+main {
+  width: 70%;
+  float: left;
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+}
+
+/* Todays weather */
+.weather-today {
+  border: 1px #eeeeee solid;
+  border-radius: 4px;
+  padding: 12px;
+  line-height: 250%;
+}
+
+/* Weathe icons */
+.weather-icon {
+  height: 36px;
+  width: 36px;
+}
+
+/* Classes for uv index */
+.uv {
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: white;
+}
+.uv-low {
+  background-color: #83c88b;
+}
+.uv-moderate {
+  background-color: #ffdc01;
+}
+.uv-high {
+  background-color: #f89c1c;
+}
+.uv-vhigh {
+  background-color: #ee1d23;
+}
+.uv-extreme {
+  background-color: #d83484;
+}
+
+/* 5 day forecast area */
+.weather-forecast {
+  display: none;
+  padding-top: 16px;
+}
+
+.forecast-days {
+  padding-top: 4px;
+}
+
+.forecast-day {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 24px 12px 8px;
+  line-height: 200%;
+}
